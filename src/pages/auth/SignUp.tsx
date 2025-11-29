@@ -28,8 +28,8 @@ export default function SignUp() {
             <div className="w-16 h-16 bg-linear-to-br from-joublue to-joupurple rounded-2xl flex items-center justify-center mx-auto mb-4">
               <span className="text-white font-bold text-2xl">J</span>
             </div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">Create Account</h2>
-            <p className="text-gray-600">Join JOU Finance to manage your money</p>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Create Account</h2>
+            <p className="text-gray-600 dark:text-gray-300">Join JOU Finance to manage your money</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
