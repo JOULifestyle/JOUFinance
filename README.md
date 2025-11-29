@@ -56,7 +56,7 @@
 
 ## 📸 Screenshots
 
-![JOU Finance App Screenshot](.github/images/JOU-Finace%20Screenshot.png)
+![JOU Finance App Screenshot](https://raw.githubusercontent.com/JOULifestyle/JOUFinance/main/.github/images/JOU-Finance%20Screenshot.png)
 
 ## 🧪 Testing
 
