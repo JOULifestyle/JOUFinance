@@ -47,10 +47,6 @@ playwright-report/
 
 # Debug files
 debug-login-page.png
-*.jpg
-*.jpeg
-*.gif
-*.svg
 
 # Dependency directories
 jspm_packages/
