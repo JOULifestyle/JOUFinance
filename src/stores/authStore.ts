@@ -28,10 +28,15 @@ export const useAuthStore = create<AuthState>((set, get) => ({
   updateProfile: async (updates) => {
     const currentUser = get().user;
     if (currentUser) {
-      // Update Firebase profile
-      await updateProfile(currentUser, {
-        displayName: updates.displayName,
-      });
+      try {
+        // Try to update Firebase profile (will fail for mock users)
+        await updateProfile(currentUser, {
+          displayName: updates.displayName,
+        });
+      } catch (error) {
+        // For mock users or if Firebase update fails, continue with local update
+        console.warn('Firebase profile update failed, updating locally:', error);
+      }
 
       const updatedUser = {
         ...currentUser,
