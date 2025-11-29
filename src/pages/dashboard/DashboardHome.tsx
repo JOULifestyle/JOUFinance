@@ -188,7 +188,7 @@ export default function DashboardHome() {
 
         {/* Dial Mock Image for Desktop */}
         <motion.img
-          src="/JOU-Finance Dail mock.png"
+          src="/jou-finance-dial-mock.png"
           alt="JOU Finance Dial Mock"
           className="absolute top-1/2 right-4 transform -translate-y-1/2 w-40 h-40 opacity-80 hidden md:block object-contain drop-shadow-lg"
           animate={{ y: [0, -10, 0] }}
@@ -360,7 +360,7 @@ export default function DashboardHome() {
           <div className="md:hidden flex items-center justify-center gap-4 my-4">
             <p className="text-lg font-semibold text-gray-900 dark:text-white">We are one click away</p>
             <motion.img
-              src="/JOU-Finance Dail mock.png"
+              src="/jou-finance-dial-mock.png"
               alt="JOU Finance Dial Mock"
               className="w-32 h-32 object-contain drop-shadow-lg"
               animate={{ y: [0, -10, 0] }}
