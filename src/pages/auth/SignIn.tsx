@@ -31,7 +31,7 @@ export default function SignIn() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-joublue to-joupurple p-4">
         <div className="w-full max-w-md">
-          <div className="bg-gray-50 rounded-2xl shadow-2xl p-8">
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-2xl p-8">
           <div className="text-center mb-8">
             <div className="w-16 h-16 bg-linear-to-br from-joublue to-joupurple rounded-2xl flex items-center justify-center mx-auto mb-4">
               <span className="text-white font-bold text-2xl">J</span>
@@ -42,7 +42,7 @@ export default function SignIn() {
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                 Email Address
               </label>
               <input
@@ -51,14 +51,14 @@ export default function SignIn() {
                 placeholder="john.doe@example.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-joublue focus:border-transparent transition-all duration-200 outline-none text-gray-900!"
+                className="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-joublue focus:border-transparent transition-all duration-200 outline-none text-gray-900 dark:text-white"
                 autoComplete="email"
                 required
               />
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="password" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                 Password
               </label>
               <input
@@ -67,7 +67,7 @@ export default function SignIn() {
                 placeholder="password123"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-joublue focus:border-transparent transition-all duration-200 outline-none"
+                className="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-joublue focus:border-transparent transition-all duration-200 outline-none text-gray-900 dark:text-white"
                 autoComplete="current-password"
                 required
               />
@@ -82,14 +82,14 @@ export default function SignIn() {
           </form>
 
           <div className="mt-6 text-center space-y-2">
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
-              <p className="text-sm text-blue-800 font-medium mb-1">Demo Account</p>
-              <p className="text-xs text-blue-600">
+            <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded-lg p-4 mb-4">
+              <p className="text-sm text-blue-800 dark:text-blue-200 font-medium mb-1">Demo Account</p>
+              <p className="text-xs text-blue-600 dark:text-blue-300">
                 Email: john.doe@example.com<br />
                 Password: password123
               </p>
             </div>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-gray-400">
               Don't have an account?{' '}
               <Link
                 to="/auth/signup"
@@ -101,7 +101,7 @@ export default function SignIn() {
             <p className="text-sm">
               <Link
                 to="/auth/forgot-password"
-                className="text-gray-500 hover:text-joublue transition-colors duration-200"
+                className="text-gray-500 dark:text-gray-400 hover:text-joublue transition-colors duration-200"
               >
                 Forgot your password?
               </Link>

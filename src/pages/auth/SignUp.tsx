@@ -23,7 +23,7 @@ export default function SignUp() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-joublue to-joupurple p-4">
         <div className="w-full max-w-md">
-          <div className="bg-gray-50 rounded-2xl shadow-2xl p-8">
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-2xl p-8">
           <div className="text-center mb-8">
             <div className="w-16 h-16 bg-linear-to-br from-joublue to-joupurple rounded-2xl flex items-center justify-center mx-auto mb-4">
               <span className="text-white font-bold text-2xl">J</span>
@@ -34,7 +34,7 @@ export default function SignUp() {
 
           <form onSubmit={handleSubmit} className="space-y-6">
              <div>
-               <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
+               <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                  Full Name
                </label>
                <input
@@ -43,14 +43,14 @@ export default function SignUp() {
                  placeholder="Enter your full name"
                  value={fullName}
                  onChange={(e) => setFullName(e.target.value)}
-                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-joublue focus:border-transparent transition-all duration-200 outline-none"
+                 className="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-joublue focus:border-transparent transition-all duration-200 outline-none text-gray-900 dark:text-white"
                  autoComplete="name"
                  required
                />
              </div>
 
              <div>
-               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+               <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                  Email Address
                </label>
                <input
@@ -59,14 +59,14 @@ export default function SignUp() {
                  placeholder="Enter your email"
                  value={email}
                  onChange={(e) => setEmail(e.target.value)}
-                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-joublue focus:border-transparent transition-all duration-200 outline-none text-gray-900!"
+                 className="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-joublue focus:border-transparent transition-all duration-200 outline-none text-gray-900 dark:text-white"
                  autoComplete="email"
                  required
                />
              </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="password" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                 Password
               </label>
               <input
@@ -75,14 +75,14 @@ export default function SignUp() {
                 placeholder="Create a password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-joublue focus:border-transparent transition-all duration-200 outline-none"
+                className="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-joublue focus:border-transparent transition-all duration-200 outline-none text-gray-900 dark:text-white"
                 autoComplete="new-password"
                 required
               />
             </div>
 
             <div>
-              <label htmlFor="confirm" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="confirm" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                 Confirm Password
               </label>
               <input
@@ -91,7 +91,7 @@ export default function SignUp() {
                 placeholder="Confirm your password"
                 value={confirm}
                 onChange={(e) => setConfirm(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-joublue focus:border-transparent transition-all duration-200 outline-none"
+                className="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-joublue focus:border-transparent transition-all duration-200 outline-none text-gray-900 dark:text-white"
                 autoComplete="new-password"
                 required
               />
@@ -106,7 +106,7 @@ export default function SignUp() {
           </form>
 
           <div className="mt-6 text-center">
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-gray-400">
               Already have an account?{' '}
               <Link
                 to="/auth/signin"
