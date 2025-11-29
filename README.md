@@ -54,6 +54,10 @@
 - **Persistent Settings**: All preferences saved to localStorage
 - **Responsive Design**: Optimized for all device sizes
 
+## 📸 Screenshots
+
+![JOU Finance App Screenshot](JOU-Finace Screenshot.png)
+
 ## 🧪 Testing
 
 ### **Test Status**

@@ -185,6 +185,16 @@ export default function DashboardHome() {
         {/* Background decoration */}
         <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
         <div className="absolute bottom-0 right-0 w-24 h-24 bg-white/5 rounded-full -mr-12 -mb-12"></div>
+
+        {/* Dial Mock Image for Desktop */}
+        <motion.img
+          src="/JOU-Finance Dail mock.png"
+          alt="JOU Finance Dial Mock"
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 w-40 h-40 opacity-80 hidden md:block object-contain drop-shadow-lg"
+          animate={{ y: [0, -10, 0] }}
+          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+          whileHover={{ scale: 1.1, rotateY: 15 }}
+        />
       </motion.div>
 
       {/* Quick Stats */}
@@ -344,6 +354,19 @@ export default function DashboardHome() {
               </motion.div>
             ))}
           </div>
+          </div>
+
+          {/* Dial Mock Image for Mobile */}
+          <div className="md:hidden flex items-center justify-center gap-4 my-4">
+            <p className="text-lg font-semibold text-gray-900 dark:text-white">We are one click away</p>
+            <motion.img
+              src="/JOU-Finance Dail mock.png"
+              alt="JOU Finance Dial Mock"
+              className="w-32 h-32 object-contain drop-shadow-lg"
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              whileHover={{ scale: 1.1, rotateY: 15 }}
+            />
           </div>
         </motion.div>
 
