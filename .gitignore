@@ -47,7 +47,6 @@ playwright-report/
 
 # Debug files
 debug-login-page.png
-*.png
 *.jpg
 *.jpeg
 *.gif
